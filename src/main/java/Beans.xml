@@ -4,9 +4,28 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="bankobj" class="com.demo.spring.Spring_Practice.Bank">  
-        <!-- collaborators and configuration for this bean go here -->
-    </bean>
+<!--       <bean id="bankobj" class="com.demo.spring.Spring_Practice.Bank"> 
+       // collaborators and configuration for this bean go here
+    </bean> 
 
 
-</beans>
+	<bean id="b" class="com.demo.spring.Spring_Practice.Book">
+	<constructor-arg name="bookId" value="1000"></constructor-arg>
+	<constructor-arg name="bookName" value="Spring Frames"></constructor-arg>
+	<constructor-arg name="author" value="John Gibbs"></constructor-arg>
+	<constructor-arg name="price" value="455"></constructor-arg>
+	</bean>
+	
+ 
+	<bean id="b" class="com.demo.spring.Spring_Practice.Book"></bean>
+ 			calling default constructor
+
+ --> 	
+ 	
+ 	<bean id="b" class="com.demo.spring.Spring_Practice.Book">
+		<property name="bookId" value="1002"></property>
+		<property name="bookName" value="Framework with Spring"></property>
+		<property name="author" value="Craig Walls"></property>
+		<property name="price" value="58889"></property>
+	</bean>
+</beans>	

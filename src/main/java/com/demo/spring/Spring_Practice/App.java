@@ -8,7 +8,12 @@ public class App
     public static void main( String[] args )
     {
     	ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
-    	Bank bankobj=context.getBean(Bank.class);
-    	bankobj.deposite(2300.50);
+		/*
+		 * Bank bankobj=context.getBean(Bank.class); 
+		 * bankobj.deposite(2300.50);
+		 */
+    	
+    	Book bookObj=context.getBean(Book.class);
+    	bookObj.display();
     }
 }
