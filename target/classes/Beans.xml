@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+     <context:annotation-config/>
+     
+     <context:component-scan base-package="com.demo.spring.Spring_Practice"></context:component-scan>
+     
 
-<!--       <bean id="bankobj" class="com.demo.spring.Spring_Practice.Bank"> 
+	<!-- <bean id="mon" class="com.demo.spring.Spring_Practice.Monitor">
+		<property name="size" value="15"></property>
+		<property name="pixels" value="1024"></property>
+	</bean>
+	
+	<bean id="com" class="com.demo.spring.Spring_Practice.Computer">
+		<property name="company" value="Dell"></property>
+		<property name="price" value="38000"></property>
+	<property name="mn" ref="mon"></property>
+		<constructor-arg name="mn" ref="mon"></constructor-arg>	
+ </bean>
+ -->
+
+<!-- <bean id="vehicle" class="com.demo.spring.Spring_Practice.Car"></bean>
+ -->
+<!-- <bean id="car" class="com.demo.spring.Spring_Practice.Car"></bean>
+<bean id="bike" class="com.demo.spring.Spring_Practice.Bike"></bean>
+ -->
+<!-- <bean id="bankobj" class="com.demo.spring.Spring_Practice.Bank"> 
        // collaborators and configuration for this bean go here
     </bean> 
 
@@ -22,10 +47,11 @@
 
  --> 	
  	
- 	<bean id="b" class="com.demo.spring.Spring_Practice.Book">
+ <!-- 	<bean id="b" class="com.demo.spring.Spring_Practice.Book">
 		<property name="bookId" value="1002"></property>
 		<property name="bookName" value="Framework with Spring"></property>
 		<property name="author" value="Craig Walls"></property>
 		<property name="price" value="58889"></property>
 	</bean>
-</beans>	
+ -->
+ </beans>	
