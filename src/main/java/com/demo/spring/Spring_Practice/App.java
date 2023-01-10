@@ -8,9 +8,9 @@ public class App
     public static void main( String[] args )
     {
     	ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
-		Computer c=context.getBean(Computer.class);
-		c.display();
-    	
+		 Computer c=context.getBean(Computer.class); 
+		 c.display();
+		
     	
     	/*
 		 * Vehicle c=context.getBean(Vehicle.class); c.ride();

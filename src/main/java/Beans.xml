@@ -9,6 +9,7 @@
      <context:annotation-config/>
      
      <context:component-scan base-package="com.demo.spring.Spring_Practice"></context:component-scan>
+     <bean id="veh" class="com.demo.spring.Spring_Practice.Bus"></bean>
      
 
 	<!-- <bean id="mon" class="com.demo.spring.Spring_Practice.Monitor">
